@@ -5,7 +5,7 @@
 ## Install
 
 ``` sh
-$ npm install --save module-root
+$ npm install --save @ddlees/module-root
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ e.g. - test/lib/utils/foo.test.js
 let foo = require('../../../src/lib/utils/foo');
 
 // Better :)
-let root = require('module-root');
+let root = require('@ddlees/module-root');
 let foo = root.require('src/lib/utils/foo');
 ```
 
@@ -26,6 +26,6 @@ e.g. - src/server/app.js
 app.use(express.static(path.join(__dirname, '../../dist'));
 
 // Better :)
-let root = require('module-root');
+let root = require('@ddlees/module-root');
 app.use(express.static(root.path + '/dist'));
 ```
