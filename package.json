@@ -1,5 +1,5 @@
 {
-  "name": "@ddlees/module-root",
+  "name": "root",
   "version": "1.0.0",
   "description": "Easily reference & require files from the calling module's root project directory",
   "engines": {
